@@ -13,7 +13,7 @@ const InicializaMongoServer = async() =>{
         console.log("⚡️ Conectado ao MongoDB!!")
     }catch(e) {
         console.error(e)
-        throw e
+        throw e //detalhes de erros
     }
 }
 

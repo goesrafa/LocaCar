@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+ const mongoose = require('mongoose')
 
 //Criação do Schema categoria
 const CategoriaSchema = mongoose.Schema({
