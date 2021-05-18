@@ -13,7 +13,7 @@ const GrupoSchema = mongoose.Schema({
     },
     notaMedia: {type:Number},
     categoria: {type:Schema.Types.ObjectId, ref: 'categoria'},
-    faixaPreco: {type:String, enum:['economico', 'intermediario', 'executivo' ]},
+    faixaPreco: {type:String, enum:['economico', 'medio', 'luxo' ]},
     tempoReserva: {type:String},
     retirada:{
         municipio:{type:String},
