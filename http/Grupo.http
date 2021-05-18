@@ -1,0 +1,64 @@
+//Teste de reuisição - Grupos
+
+@baseURL = http://localhost:4000
+@id = 
+@idCategoria =
+
+###
+// GET - Lista os grupos
+GET {{baseURL}}/grupos
+Content-Type: application/json
+
+###
+//GET - Lista o grupo pelo ID
+GET {{baseURL}}/grupos/{{id}}
+Content-Type: application/json
+
+###
+//GET - Lista o grupo pelo ID da categoria
+GET {{baseURL}}/grupos/categoria/{{idCategoria}}
+Content-Type: application/json
+
+###
+//POST - Incluir um novo grupo
+POST {{baseURL}}/grupos
+Content-Type: application/json
+
+{
+    "nome": "Grupo F - Intermediario (SDMR)",
+    "status": "ativo",
+    "foto":{
+        "originalname": "vwgol.jpg",
+        "path": "public/uploads/vw.jpg",
+        "size": 45318,
+        "mimetype": "image/jpg"
+    },
+    "notaMedia": 5.7,
+    "categoria":"",
+    "faixaPreco": "intermediario",
+    "tempoReserva": "1 mês",
+    "retirada":{
+        "municipio": "Itu",
+        "estado": "SP",
+        "dataRetirada":"20.04.2021",
+        "horarioRetirada": 14.50
+    },
+    "geolocalização":{
+        "latitude":-23.273348,
+        "longitude": -47.2936687
+    }
+}
+
+###
+//DELETAR um grupo
+DELETE {{baseURL}}/grupos/{{id}}
+Content-Type: application/json
+
+###
+//PUT - Altera um grupo
+PUT {{baseURL}}/grupos
+Content-Type: application/json
+
+{
+    
+}
