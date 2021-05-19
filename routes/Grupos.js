@@ -64,6 +64,8 @@ const validarGrupo = [
     .not().isEmpty().withMessage('Nome do grupo é obrigatório!')
     .isLength({min: 5}).withMessage('Nome do grupo é muito curto'),
     check('status', 'Informe um status válido para o grupo.').isIn(['ativo', 'inativo']),
+    check('categoria')
+    .isMongoId().trim().withMessage('A categoria do grupo é inválida'),
     check('faixaPreco', 'A faixa de preço informada é inválida').isIn(['economico', 'intermediario', 'executivo'])
 ]
 

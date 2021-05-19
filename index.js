@@ -21,7 +21,7 @@ app.use(express.json())
 
 app.get('/', (req, res) =>{
     res.json({mensagem: "API LocaCar 100% funcional!!🤙 ",
-            versao: '1.0.0'})
+            versao: '1.0.3'})
 })
 /*Rotas da Categoria */
 app.use('/categorias', rotasCategoria)

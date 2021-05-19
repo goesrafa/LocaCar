@@ -18,7 +18,7 @@ Content-Type: application/json
 POST {{baseURL}}/categorias
 Content-Type: application/json
 
-{"nome":"Grupo B - Executivo", "status":"ativo"}
+{"nome":"Grupo A - Econômico", "status":"ativo"}
 
 ###
 //DELETE - apagar uma categoria
@@ -31,7 +31,5 @@ PUT {{baseURL}}/categorias
 Content-Type: application/json
 
 {
-    "_id": "60a28947358c303df50393da",
-    "nome": "Grupo LE - SUV Especial",
-    "status": "inativo"
+    
 }

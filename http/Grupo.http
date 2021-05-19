@@ -2,7 +2,7 @@
 
 @baseURL = http://localhost:4000
 @id = 
-@idCategoria = 
+@idCategoria = 60a5968de497473364c123c3
 
 ###
 // GET - Lista os grupos
@@ -25,9 +25,10 @@ POST {{baseURL}}/grupos
 Content-Type: application/json
 
 {
-    "nome": "Grupo B - Suv Especial ",
+    "nome": "Suv Especial ",
     "status": "ativo",
-    "faixaPreco": "medio",
+    "categoria":"60a5968de497473364c123c3",
+    "faixaPreco": "luxo",
     "tempoReserva": "1 mês",
     "retirada":{
         "municipio": "Itu",
