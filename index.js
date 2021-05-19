@@ -12,6 +12,7 @@ InicializaMongoServer()
 const app = express()
 //Removendo por segurança
 app.disable('x-powered-by')
+
 //PORTA DEFAULT 
 const PORT = process.env.PORT
 

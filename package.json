@@ -1,6 +1,6 @@
 {
   "name": "backlocacar",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Backend do projeto LocaCar",
   "main": "index.js",
   "scripts": {
