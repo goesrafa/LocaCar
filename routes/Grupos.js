@@ -66,7 +66,7 @@ const validarGrupo = [
     check('status', 'Informe um status válido para o grupo.').isIn(['ativo', 'inativo']),
     check('categoria')
     .isMongoId().trim().withMessage('A categoria do grupo é inválida'),
-    check('faixaPreco', 'A faixa de preço informada é inválida').isIn(['economico', 'intermediario', 'executivo'])
+    check('faixaPreco', 'A faixa de preço informada é inválida').isIn(['economico', 'medio', 'luxo'])
 ]
 
 router.post('/', validarGrupo, async(req, res)=>{

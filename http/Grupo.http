@@ -25,16 +25,16 @@ POST {{baseURL}}/grupos
 Content-Type: application/json
 
 {
-    "nome": "Suv Especial ",
+    "nome": "Corolla",
     "status": "ativo",
     "categoria":"60a5968de497473364c123c3",
     "faixaPreco": "luxo",
-    "tempoReserva": "1 mês",
+    "tempoReserva": "3 mês",
     "retirada":{
-        "municipio": "Itu",
+        "municipio": "Sorocaba",
         "estado": "SP",
         "dataRetirada":"15 de março",
-        "horarioRetirada": 13
+        "horarioRetirada": 10
     }
 }
 
