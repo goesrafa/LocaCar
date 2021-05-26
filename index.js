@@ -18,7 +18,7 @@ app.disable('x-powered-by')
 
 //Middleware Express
 app.use(function(req, res, next){
-    res.setHeader('Acess-Control-Allow-Origin', '*')
+    res.setHeader('Access-Control-Allow-Origin', '*')
     //Cabeçalhos permitidos
     res.setHeader('Access-Control-Allow-Headers', '*')
     //ex: res.setHeader('Acess-Control-Allow-Headers', 'Content-Type, Accept, access-token')
@@ -35,7 +35,7 @@ app.use(express.json())
 
 app.get('/', (req, res) =>{
     res.json({mensagem: "API LocaCar 100% funcional!!🤙 ",
-            versao: '1.0.5'})
+            versao: '1.0.6'})
 })
 /*Rotas da Categoria */
 app.use('/categorias', rotasCategoria)
