@@ -14,11 +14,13 @@ const app = express()
 //Removendo por segurança
 app.disable('x-powered-by')
 
+
+
 //Middleware Express
 app.use(function(req, res, next){
-    //Em produção, remova o * e atualiza com o seu domínio/api do app
     res.setHeader('Acess-Control-Allow-Origin', '*')
     //Cabeçalhos permitidos
+    res.setHeader('Access-Control-Allow-Headers', '*')
     //ex: res.setHeader('Acess-Control-Allow-Headers', 'Content-Type, Accept, access-token')
     //Metodos permitido
     res.setHeader('Access-Control-Allow-methods', 'GET, POST, DELETE, OPTIONS, PATCH')

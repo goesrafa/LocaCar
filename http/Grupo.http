@@ -42,7 +42,7 @@ Content-Type: application/json
 //DELETAR um grupo
 DELETE {{baseURL}}/grupos/{{id}}
 Content-Type: application/json
-
+ 
 ###
 //PUT - Altera um grupo
 PUT {{baseURL}}/grupos
