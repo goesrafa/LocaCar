@@ -18,7 +18,14 @@ Content-Type: application/json
 POST {{baseURL}}/categorias
 Content-Type: application/json
 
-{"nome": "Grupo B - Executivo Fast", "status": "ativo"}
+{"nome": "Grupo C - SUV", 
+"status": "ativo",
+"foto": {
+    "origianlname": "hyundai.png",
+    "path": "public/uploads/hyundai.png",
+    "size": 207711,
+    "mimetype": "image/png"
+}}
 
 ###
 //DELETE - apagar uma categoria
