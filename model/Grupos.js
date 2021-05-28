@@ -6,6 +6,10 @@ const GrupoSchema = mongoose.Schema({
     nome: {type: String, unique: true},
     categoria:{type: Schema.Types.ObjectId, ref: 'categoria'},
     status: {type: String, enum: ['ativo', 'inativo']}, 
+    foto: {
+        originalname: {type: String}, path: {type: String},
+        size: {type: String}, mimetype: {type: String}
+    },
     faixaPreco: {type:String, enum:['economico', 'medio', 'luxo' ]},
     tempoReserva: {type:String},
     retirada:{
