@@ -18,11 +18,11 @@ Content-Type: application/json
 POST {{baseURL}}/categorias
 Content-Type: application/json
 
-{"nome": "Grupo C - SUV", 
+{"nome": "Grupo B - Luxo", 
 "status": "ativo",
 "foto": {
-    "origianlname": "hyundai.png",
-    "path": "public/uploads/hyundai.png",
+    "origianlname": "mercedes.png",
+    "path": "public/uploads/mercedes.png",
     "size": 207711,
     "mimetype": "image/png"
 }}
