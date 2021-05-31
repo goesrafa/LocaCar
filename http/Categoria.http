@@ -19,7 +19,7 @@ POST {{baseURL}}/categorias
 Content-Type: application/json
 
  {
-        "nome":"Up - 1.0",
+        "nome":"Grupo E - Familia",
         "status": "ativo",
         "foto": {
             "orinalname":"up.png",

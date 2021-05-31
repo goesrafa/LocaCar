@@ -1,7 +1,7 @@
 //Teste de reuisição - Grupos
 
 @baseURL = http://localhost:4000
-@id = 60b5226d27b97e77b58a00a7
+@id = 
 @idCategoria = 
 
 ###
@@ -25,16 +25,16 @@ POST {{baseURL}}/grupos
 Content-Type: application/json
 
     {
-        "nome":"Up",
+        "nome":"PickUp Chevrolet",
         "status": "ativo",
         "foto": {
-            "orinalname":"up.png",
-            "path": "public/uploads/up.png",
+            "orinalname":"montana.png",
+            "path": "public/uploads/montana.png",
             "size": 45318,
             "mimetype": "image/png"
         },
-        "valor": 500.00,
-        "arcond": "não"
+        "faixaPreco": "economico",
+        "cor": "branca"
     }
 
 ###
