@@ -61,12 +61,13 @@ router.get('/categoria/:id', async(req, res)=>{
 *********************************************/
 const validarGrupo = [
     check('nome')
-    .not().isEmpty().withMessage('Nome do grupo é obrigatório!')
-    .isLength({min: 5}).withMessage('Nome do grupo é muito curto'),
+    .not().isEmpty().withMessage('Nome do grupo é obrigatório!'),
     check('status', 'Informe um status válido para o grupo.').isIn(['ativo', 'inativo']),
     check('categoria')
     .isMongoId().trim().withMessage('A categoria do grupo é inválida'),
-    check('faixaPreco', 'A faixa de preço informada é inválida').isIn(['economico', 'medio', 'luxo'])
+    check('valor').isFloat({min: 100, max: 999}),
+    check('arcond')
+    .not().isEmpty().withMessage('Este campo é obrigatório').isIn(['sim', 'não'])
 ]
 
 router.post('/', validarGrupo, async(req, res)=>{

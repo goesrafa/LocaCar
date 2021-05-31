@@ -10,13 +10,7 @@ const GrupoSchema = mongoose.Schema({
         originalname: {type: String}, path: {type: String},
         size: {type: String}, mimetype: {type: String}
     },
-    faixaPreco: {type:String, enum:['economico', 'medio', 'luxo' ]},
-    tempoReserva: {type:String},
-    retirada:{
-        municipio:{type:String},
-        estado: {type:String},
-        dataRetirada: {type:String},
-        horarioRetirada: {type: Number}
-    }
+    valor: {type:Number},
+    arcondicionado: {type:String, enum: ['sim', 'não'], default: 'sim'},
 }, {timestamps:true})
 module.exports = mongoose.model('grupo', GrupoSchema)

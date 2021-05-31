@@ -40,7 +40,9 @@ router.get('/:id', async (req, res) => {
  ***********************************************/
 const validarCategoria = [
     check("nome", "O nome da categoria é obrigatório").not().isEmpty(),
-    check("status", "Informe um status válido para a categoria.").isIn(['ativo', 'inativo'])
+    check("status", "Informe um status válido para a categoria.").isIn(['ativo', 'inativo']),
+    
+
 ]
 router.post('/', validarCategoria, async (req, res) => {
     const errors = validationResult(req)

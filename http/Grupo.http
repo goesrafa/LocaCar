@@ -1,8 +1,8 @@
 //Teste de reuisição - Grupos
 
 @baseURL = http://localhost:4000
-@id = 
-@idCategoria = 60a5968de497473364c123c3
+@id = 60b5226d27b97e77b58a00a7
+@idCategoria = 
 
 ###
 // GET - Lista os grupos
@@ -24,19 +24,18 @@ Content-Type: application/json
 POST {{baseURL}}/grupos
 Content-Type: application/json
 
-{
-    "nome": "Corolla",
-    "status": "ativo",
-    "categoria":"60a5968de497473364c123c3",
-    "faixaPreco": "luxo",
-    "tempoReserva": "3 mês",
-    "retirada":{
-        "municipio": "Sorocaba",
-        "estado": "SP",
-        "dataRetirada":"15 de março",
-        "horarioRetirada": 10
+    {
+        "nome":"Up",
+        "status": "ativo",
+        "foto": {
+            "orinalname":"up.png",
+            "path": "public/uploads/up.png",
+            "size": 45318,
+            "mimetype": "image/png"
+        },
+        "valor": 500.00,
+        "arcond": "não"
     }
-}
 
 ###
 //DELETAR um grupo

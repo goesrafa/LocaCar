@@ -18,14 +18,16 @@ Content-Type: application/json
 POST {{baseURL}}/categorias
 Content-Type: application/json
 
-{"nome": "Grupo B - Luxo", 
-"status": "ativo",
-"foto": {
-    "origianlname": "mercedes.png",
-    "path": "public/uploads/mercedes.png",
-    "size": 207711,
-    "mimetype": "image/png"
-}}
+ {
+        "nome":"Up - 1.0",
+        "status": "ativo",
+        "foto": {
+            "orinalname":"up.png",
+            "path": "public/uploads/up.png",
+            "size": 45318,
+            "mimetype": "image/png"
+    }
+ }
 
 ###
 //DELETE - apagar uma categoria
@@ -38,5 +40,7 @@ PUT {{baseURL}}/categorias
 Content-Type: application/json
 
 {
-    
+    "_id": "60b5271627b97e77b58a00aa",
+    "nome": "Grupo Econômico",
+    "status": "ativo"
 }
