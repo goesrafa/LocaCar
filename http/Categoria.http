@@ -2,7 +2,7 @@
 
 @baseURL = http://localhost:4000
 
-@id = 
+@id = 60b5295c27b97e77b58a00ab
 
 ###
 //GET - Listar as categorias
@@ -40,7 +40,13 @@ PUT {{baseURL}}/categorias
 Content-Type: application/json
 
 {
-    "_id": "60b5271627b97e77b58a00aa",
-    "nome": "Grupo Econômico",
-    "status": "ativo"
+     "_id": "60b5295c27b97e77b58a00ab",
+     "nome":"Grupo E - Familia",
+        "status": "ativo",
+        "foto": {
+            "orinalname":"hyundai.png",
+            "path": "public/uploads/hyundai.png",
+            "size": 45318,
+            "mimetype": "image/png"
+    }
 }
