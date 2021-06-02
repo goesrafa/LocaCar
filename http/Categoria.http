@@ -2,7 +2,7 @@
 
 @baseURL = http://localhost:4000
 
-@id = 60b7b94367957800043e43ac
+@id = 
 
 ###
 //GET - Listar as categorias
